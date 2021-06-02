@@ -1,0 +1,29 @@
+fernando gutierrez gutierrez16:22
+
+Examen práctico NET CORE. 
+Descripción del problema:
+Tener una solución integral de una pantalla creada en un MVC, con el fin de permitir la captura de un producto Italika con las siguientes propiedades.
+1.	SKU (string)
+2.	Modelo (string)
+3.	Tipo (TRABAJO,DEPORTIVA,INFANTIL)
+4.	Número de serie (string)
+5.	Fecha
+
+Incluir las siguientes operaciones adicionales:
+1.	Buscar productos, con los siguientes filtros, todos, por modelo y por SKU.
+2.	Opción para editar la información de un producto.
+3.	Eliminar un producto de BD.
+
+Todas las operaciones CRUD se deben implementar a través de una API Rest utilizando la versión más actual NET Core.
+
+CONSIDERAR LOS SIGUIENTES LINEAMIENTOS: 
+1.	Generar aplicaciones en C# .NET desde cero, se puede utilizar algún template predefinido en Visual Studio 201X.
+2.	La solución debe ser creada en .NET Core usando el lenguaje de programación C# en su versión más actual.
+3.	Para la conexión a BD, Sql Server 201X. Usar procedimientos almacenados para las operaciones.
+
+
+ENTREGABLES:
+1.	Un proyecto solución MVC, Front 
+2.	Un proyecto solución Net core que contiene el EndPoint y sus recursos.
+3.	Script de BD, para crear usuario, BD, SP y creación de tablas.
+NOTA: Los entregables se debe versionar en un repositorio de Git Hub para su revisión.
