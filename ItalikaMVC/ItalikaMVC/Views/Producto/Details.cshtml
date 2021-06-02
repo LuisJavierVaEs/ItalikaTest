@@ -1,0 +1,64 @@
+﻿@model  producto
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2 text-right">
+            @Html.DisplayNameFor(Model => Model.Id)
+        </div>
+        <div class="col-sm-2 text-left">
+            @Html.DisplayFor(Model => Model.Id)
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-2 text-right">
+            @Html.DisplayNameFor(Model => Model.Sku)
+        </div>
+        <div class="col-sm-2 text-left">
+            <Label >
+               @Html.DisplayFor(Model => Model.Sku)
+            </Label>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-2 text-right">
+            @Html.DisplayNameFor(Model => Model.Modelo)
+        </div>
+        <div class="col-sm-2 text-left">
+            <Label ID="lblSApellido">
+            @Html.DisplayFor(Model => Model.Modelo)
+            </Label>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-2 text-right">
+            Tipo
+        </div>
+        <div class="col-sm-2 text-left">
+            <Label >
+            @ViewBag.IdTipo
+            </Label>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-2 text-right">
+            @Html.DisplayNameFor(Model => Model.NumeroSerie)
+        </div>
+        <div class="col-sm-2 text-left">
+            <Label >
+            @Html.DisplayFor(Model => Model.NumeroSerie)
+            </Label>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col-md-2">
+            <p></p>
+            @Html.ActionLink("Regresar a la lista", "Index")
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+﻿@model producto
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h1>Delete</h1>
+<div class="container">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => Model.Sku)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => Model.Sku)
+        </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fert)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdTipo)
+        </dt>
+
+        <dd>
+            @ViewBag.IdTipo
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroSerie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroSerie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+    </dl>
+    @using (Html.BeginForm())
+    {
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-outline-danger" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
